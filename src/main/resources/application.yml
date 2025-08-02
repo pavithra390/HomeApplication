@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: Home
+  datasource:
+    url: jdbc:mariadb://host.docker.internal:2001/home
+    username: root
+    password: Pavi
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 1994
+
+
+#spring.datasource.url=jdbc:mariadb://host.docker.internal:2001/home
